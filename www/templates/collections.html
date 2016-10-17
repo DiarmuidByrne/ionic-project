@@ -1,0 +1,18 @@
+<ion-view>
+  <link href="www/lib/ionic/ionicons.css" rel="stylesheet">
+
+  <ion-nav-bar>
+    <ion-nav-buttons side="left">
+   <!-- Toggle left side menu -->
+   <button menu-toggle="left" class="button icon ion-navicon"></button>
+  </ion-nav-buttons>
+
+    <ion-nav-title class = 'menu-navbar2'>Collections</ion-nav-title>
+  </ion-nav-bar>
+  <ion-content class=sidebar>
+    <ion-list>
+      <img class="img-collections" ng-repeat="image in collections" ng-src="{{image.src}}">
+    </ion-list>
+    <button type="button" ng-click="goToURL('/app/aircraft')">Image</button>
+  </ion-content>
+</ion-view>

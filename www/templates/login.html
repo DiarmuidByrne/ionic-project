@@ -1,0 +1,22 @@
+<ion-modal-view class>
+  <ion-header-bar>
+    <ion-nav-bar>
+      <ion-nav-title class = 'menu-navbar2'>Login</ion-nav-title>
+    </ion-nav-bar>
+  </ion-header-bar>
+  <ion-content class="sidebar">
+    <form ng-submit="doLogin()">
+      <div class="list bottom">
+        <img class="sidebar-image" src="img/Logos/Logo.png"/>
+        <label class="item item-input">
+          <input type="text" placeholder="Username" ng-model="loginData.username">
+        </label>
+        <label class="item item-input">
+          <input type="password" placeholder="Password" ng-model="loginData.password">
+        </label>
+        <button class="button button-block button-dark" type="submit">Log in</button>
+        <button class="button button-block button-positive" type="submit">Register</button>
+      </div>
+    </form>
+  </ion-content>
+</ion-modal-view>

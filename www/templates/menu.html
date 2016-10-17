@@ -1,0 +1,37 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="menu-navbar2">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu class='sidebar' side="left">
+    <ion-content>
+      <img class="sidebar-image" src="img/Logos/Logo.png"/>
+      <ion-list>
+        <ion-item class='sidebar' menu-close ng-click="login()">
+          Login
+        </ion-item>
+        <ion-item class='sidebar' menu-close href="#/app/search">
+          Search
+        </ion-item>
+        <ion-item class='sidebar' menu-close href="#/app/browse">
+          Browse
+        </ion-item>
+        <ion-item class='sidebar' menu-close href="#/app/collections">
+          Collections
+        </ion-item>
+        <ion-item class='sidebar' menu-close href="#/app/aircraft">
+          Aircraft
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>
